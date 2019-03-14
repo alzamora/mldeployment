@@ -13,7 +13,7 @@ def main():
 @app.route("/predict/", methods=['GET'])
 def predict():
 	# ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
-	# Example:  [6.9, 3.1, 4.9, 1.5]
+	# Example:  http://0.0.0.0:5000/predict/?sepal_length=6.9&&sepal_width=3.1&&petal_length=4.9&&petal_width=1.5
 	sepal_length = request.args.get('sepal_length')
 	sepal_width = request.args.get('sepal_width')
 	petal_length = request.args.get('petal_length')
